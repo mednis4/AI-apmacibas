@@ -1,0 +1,138 @@
+/* Mani uzdevumi — noformējums */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 16px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f1f4f8;
+  color: #1f2933;
+}
+
+/* Galvenais konteiners */
+.lietotne {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Ievades rinda */
+.ievades-rinda {
+  display: flex;
+  gap: 8px;
+}
+
+#task-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #c4cdd5;
+  border-radius: 8px;
+}
+
+#task-input:focus {
+  outline: 2px solid #2f6fde;
+  border-color: transparent;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+#add-btn {
+  padding: 10px 16px;
+  color: #ffffff;
+  background: #2f6fde;
+  border: none;
+  border-radius: 8px;
+}
+
+#add-btn:hover {
+  background: #2459b8;
+}
+
+/* Filtru pogas */
+.filtri {
+  display: flex;
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.filtri button {
+  flex: 1;
+  padding: 6px 10px;
+  background: #ffffff;
+  border: 1px solid #c4cdd5;
+  border-radius: 8px;
+}
+
+.filtri button.aktivs {
+  color: #ffffff;
+  background: #1f2933;
+  border-color: #1f2933;
+}
+
+/* Uzdevumu saraksts */
+#task-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #e4e9ee;
+}
+
+#task-list input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.uzdevuma-teksts {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+/* Izpildīts uzdevums — izsvītrots teksts */
+li.izpildits .uzdevuma-teksts {
+  color: #8a96a3;
+  text-decoration: line-through;
+}
+
+.dzest-btn {
+  padding: 4px 10px;
+  color: #c0392b;
+  background: transparent;
+  border: 1px solid #e3b4ae;
+  border-radius: 6px;
+}
+
+.dzest-btn:hover {
+  color: #ffffff;
+  background: #c0392b;
+}
+
+.kajene {
+  margin: 16px 0 0;
+  color: #52606d;
+  font-size: 0.95rem;
+}
